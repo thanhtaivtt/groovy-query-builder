@@ -6,7 +6,7 @@ Repository just for education.
 Import Query
 
 ```groovy
-    import Core.Query
+import Core.Query
 ```
 
 Init Query Object:
@@ -24,33 +24,33 @@ query = new Query(connString, username, password);
 Set table
 
 ```groovy
-    query.from(tablename)
+query.from(tablename)
 ```
 Select Statement
 
 ```groovy
-   query.select([ArrayColumn])
+query.select([ArrayColumn])
 ```
 
 Where Statement
 
 ```groovy
-    query.where(Coulumn, Value, Operater[Eg: =, != , <>, ...])
-    query.whereOr(Coulumn, Value, Operater[Eg: =, != , <>, ...])
-    query.whereIn(Coulumn, ListValue)
-    query.whereNotIn(Coulumn, ListValue)
+query.where(Coulumn, Value, Operater[Eg: =, != , <>, ...])
+query.whereOr(Coulumn, Value, Operater[Eg: =, != , <>, ...])
+query.whereIn(Coulumn, ListValue)
+query.whereNotIn(Coulumn, ListValue)
 ```
 
 Get result
 
 ```groovy
-    query.run() // get all result
-    query.run(offset, limit) // get result with paging
+query.run() // get all result
+query.run(offset, limit) // get result with paging
 ```
 Get first result
 
 ```groovy
-    query.first() //
+query.first() //
 ```
 
 ### Author
