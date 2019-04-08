@@ -102,6 +102,18 @@ class Query {
     }
 
     /**
+     *  binding to where statement with OR
+     *
+     * @param column
+     * @param value
+     * @param operator
+     * @return
+     */
+    def whereOr(column, value, operator = '=') {
+        this.__where(column, value, operator, 'OR')
+    }
+
+    /**
      * Set table from stament
      *
      * @param table
