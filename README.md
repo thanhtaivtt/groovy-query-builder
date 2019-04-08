@@ -36,7 +36,9 @@ Where Statement
 
 ```groovy
     query.where(Coulumn, Value, Operater[Eg: =, != , <>, ...])
-    query.whereIn(Coulumn, List Value, Operater[Eg: IN, NOT IN])
+    query.whereOr(Coulumn, Value, Operater[Eg: =, != , <>, ...])
+    query.whereIn(Coulumn, ListValue)
+    query.whereNotIn(Coulumn, ListValue)
 ```
 
 Get result
